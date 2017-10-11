@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>固定在顶部</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="rule">
+        300px
+    </div>
+    <div id="sticky"></div>
+    <script type="text/javascript" src="js/sticky.js"></script>
+    <script>
+    window.onload = function() {
+        var element = document.getElementById("sticky");
+
+        var sticky = new Sticky(element)
+
+        sticky.on("onStick", function() {
+            console.log('固定在顶部')
+        })
+
+        sticky.on("onDetach", function() {
+            console.log('取消固定在顶部')
+        })
+    }
+    </script>
+</body>
+
+</html>

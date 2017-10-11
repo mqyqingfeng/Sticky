@@ -1,0 +1,22 @@
+body {
+    height: 3000px;
+    background-color: #eee;
+    margin: 0;
+}
+
+#sticky {
+    width: 800px;
+    height: 100px;
+    background-color: #3498db;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rule {
+    height: 300px;
+    width: 60px;
+    background-color: #1abc9c;
+    text-align: center;
+    line-height: 300px;
+    color: #fff;
+}
